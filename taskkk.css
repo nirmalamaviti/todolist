@@ -1,0 +1,77 @@
+.container{
+    border: 1px solid black;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+h2 {
+    text-align: center;
+    color: violet;
+}
+#todo{
+    margin-top: 20px;
+}
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #1d1818;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/71/71397.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 0px;
+}
+ul li.checked{
+    color: red;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8o3z2bJsVFP1WiW0dWYel_XNKKtie0OPtQ_1kw62vBw&s");
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 20px;
+    font-size: 15px;
+    color: #1d1818;
+    text-align: center;
+    border: 1px solid green;
+    background: green;
+    border-radius: 4px;
+
+}
+ul li span:hover{
+    background-color: rgb(242, 226, 226);
+}
+.checked {
+    text-decoration: line-through;
+}
